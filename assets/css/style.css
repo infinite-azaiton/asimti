@@ -90,8 +90,8 @@ html[dir="ltr"] .hero::after { background: linear-gradient(to right, rgba(31, 36
 .hero-text { max-width: 620px; }
 .hero-eyebrow { display: inline-flex; align-items: center; gap: 12px; font-size: 15px; font-weight: 500; color: #dfe4f7; margin-bottom: 18px; }
 .hero-eyebrow::before { content: ""; width: 36px; height: 3px; border-radius: 3px; background: var(--green); }
-.hero h1 { color: #fff; font-size: clamp(56px, 7.4vw, 92px); font-weight: 800; line-height: 1.2; }
-.hero-lead { font-size: clamp(21px, 2.3vw, 28px); font-weight: 500; color: #fff; margin-block: 6px 18px; line-height: 1.5; }
+.hero h1 { color: #fff; font-size: clamp(56px, 7.4vw, 92px); font-weight: 800; line-height: 1.3; padding-bottom: .14em; }
+.hero-lead { font-size: clamp(21px, 2.3vw, 28px); font-weight: 500; color: #fff; margin-block: 14px 18px; line-height: 1.5; }
 .hero-copy { font-size: 19px; color: #dde2f5; margin-bottom: 34px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; }
 
