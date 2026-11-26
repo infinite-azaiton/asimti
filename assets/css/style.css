@@ -189,15 +189,12 @@ html[dir="ltr"] .vm-vision p::before { content: "\201C"; }
 .slogan strong { font-size: clamp(28px, 3.8vw, 46px); font-weight: 800; line-height: 1.5; }
 
 /* ---------- contact ---------- */
-.section.blue { background: var(--blue); }
-.blue .eyebrow { color: var(--navy-deep); }
-.blue .eyebrow::before { background: var(--navy-deep); }
-.blue .contact h2 { color: var(--navy-deep); }
+.section.blue { background: var(--sky); }
 .contact { display: grid; grid-template-columns: 1fr auto; gap: 56px; align-items: center; }
-.contact p { color: var(--navy-deep); font-size: 19px; font-weight: 500; margin-top: 10px; max-width: 560px; }
+.contact p { color: var(--body); font-size: 19px; margin-top: 10px; max-width: 560px; }
 .phone { display: flex; align-items: center; gap: 22px; padding-block: 22px; padding-inline: 26px 40px; background: var(--navy); color: #fff; border-radius: 22px; box-shadow: 0 20px 44px rgba(31, 36, 102, .26); transition: background .2s, box-shadow .2s; }
 .phone:hover { background: var(--navy-deep); box-shadow: 0 24px 50px rgba(31, 36, 102, .34); }
-.phone-ic { display: flex; align-items: center; justify-content: center; flex: none; width: 64px; height: 64px; border-radius: 50%; background: #fff; color: var(--navy); }
+.phone-ic { display: flex; align-items: center; justify-content: center; flex: none; width: 64px; height: 64px; border-radius: 50%; background: var(--blue); color: var(--navy-deep); }
 .phone-text { display: flex; flex-direction: column; }
 .phone small { font-size: 15px; font-weight: 500; color: #c8cff0; }
 .phone b { font-size: 52px; font-weight: 800; line-height: 1.1; color: #fff; }
