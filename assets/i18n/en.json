@@ -91,5 +91,13 @@
   "footer.rights": "© Mayoralty of Baghdad (Asimti). All rights reserved.",
   "nf.title": "Page not found",
   "nf.text": "Sorry, we couldn’t find the page you were looking for.",
-  "nf.back": "Back to home"
+  "nf.back": "Back to home",
+  "footer.quick": "Quick links",
+  "footer.contact": "Contact",
+  "sectors.soon.t": "Services in preparation",
+  "about.caption": "Baghdad · a city served digitally",
+  "values.lead": "Five values that guide how we design and deliver services.",
+  "who.lead": "One platform serving every group that uses the Mayoralty’s services.",
+  "offer.lead": "What the platform will make available to beneficiaries when its services launch.",
+  "goals.lead": "Five goals that drive the platform."
 }
