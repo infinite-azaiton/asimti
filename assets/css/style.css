@@ -124,15 +124,15 @@ html[dir="ltr"] .hero::after { background: linear-gradient(to right, rgba(31, 36
 .vm { display: grid; grid-template-columns: 1.4fr 1fr; gap: 28px; align-items: start; }
 .vm-vision, .vm-mission { position: relative; overflow: hidden; border-radius: 28px; color: #fff; }
 .vm-vision { background: var(--navy); padding: 60px 56px 68px; box-shadow: 0 30px 60px rgba(31, 36, 102, .22); }
-.vm-mission { background: var(--blue); color: var(--navy-deep); padding: 48px 44px 52px; margin-top: 72px; box-shadow: 0 24px 50px rgba(42, 170, 225, .26); }
+.vm-mission { background: #fff; color: var(--navy); padding: 48px 44px 52px; margin-top: 72px; border: 1px solid var(--line); box-shadow: 0 24px 50px rgba(31, 36, 102, .10); }
 .vm h2 { display: flex; align-items: center; gap: 14px; font-size: 21px; font-weight: 800; color: #9fdcfa; margin-bottom: 26px; }
 .vm h2::before { content: ""; width: 40px; height: 3px; border-radius: 3px; background: var(--blue); }
-.vm-mission h2 { color: var(--navy-deep); }
-.vm-mission h2::before { background: var(--navy-deep); }
+.vm-mission h2 { color: var(--navy); }
+.vm-mission h2::before { background: var(--blue); }
 .vm-vision p { position: relative; font-size: clamp(27px, 3vw, 40px); font-weight: 800; line-height: 1.6; color: #fff; }
 .vm-vision p::before { content: "\201D"; display: block; height: 74px; font-size: 130px; line-height: 1; color: var(--blue); }
 html[dir="ltr"] .vm-vision p::before { content: "\201C"; }
-.vm-mission p { font-size: 21px; font-weight: 700; line-height: 1.85; color: var(--navy-deep); }
+.vm-mission p { font-size: 21px; font-weight: 700; line-height: 1.85; color: var(--navy); }
 .vm-mark { position: absolute; inset-inline-end: -46px; bottom: -64px; width: 280px; height: auto; opacity: .07; pointer-events: none; }
 
 
@@ -152,11 +152,12 @@ html[dir="ltr"] .vm-vision p::before { content: "\201C"; }
 .value h3 { font-size: 27px; font-weight: 800; color: inherit; margin-bottom: 6px; }
 .value p { font-size: 17px; font-weight: 500; line-height: 1.75; color: inherit; }
 .v1 { grid-column: span 3; background: var(--navy); color: #fff; }
-.v2 { grid-column: span 3; background: var(--blue); color: var(--navy-deep); }
-.v3 { background: var(--sky); color: var(--navy-deep); }
-.v4 { background: #fff; color: var(--navy); border: 1px solid var(--line); }
-.v5 { background: var(--sky); color: var(--navy-deep); }
-.v4 p { color: var(--body); }
+.v2 { grid-column: span 3; background: var(--sky); color: var(--navy-deep); }
+.v3 { background: #fff; color: var(--navy); border: 1px solid var(--line); }
+.v4 { background: var(--sky); color: var(--navy-deep); }
+.v5 { background: #fff; color: var(--navy); border: 1px solid var(--line); }
+.v3 p, .v5 p { color: var(--body); }
+.v2 .idx, .v3 .idx, .v4 .idx, .v5 .idx { color: var(--blue-ink); opacity: .8; }
 
 
 .who { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
