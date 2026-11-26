@@ -3,90 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>عاصمتي | Asimti</title>
-  <meta name="description" content="asimti.iq">
+  <title>عاصمتي | المنصة الرقمية الموحّدة لأمانة بغداد</title>
+  <meta name="description" content="عاصمتي هي المنصة الرقمية الموحّدة لأمانة بغداد. تجمع خدمات قطاعات الأمانة ودوائرها في مكان واحد.">
+  <meta property="og:title" content="عاصمتي | Asimti">
+  <meta property="og:description" content="المنصة الرقمية الموحّدة لأمانة بغداد">
+  <meta property="og:image" content="assets/img/favicon-180.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/img/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/img/favicon-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --primary: #1f4e79;
-      --bg: #f5f7fa;
-      --text: #1d2733;
-      --muted: #5b6b7c;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: "IBM Plex Sans Arabic", system-ui, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-    }
-    .brand { font-weight: 700; font-size: 1.25rem; color: var(--primary); }
-    .lang-btn {
-      background: none;
-      border: 1px solid var(--primary);
-      color: var(--primary);
-      padding: 0.4rem 1rem;
-      border-radius: 6px;
-      font: inherit;
-      cursor: pointer;
-    }
-    .lang-btn:hover { background: var(--primary); color: #fff; }
-    main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 2rem;
-      gap: 1rem;
-    }
-    h1 { font-size: clamp(2rem, 6vw, 3.5rem); color: var(--primary); }
-    p { color: var(--muted); font-size: 1.15rem; max-width: 36rem; line-height: 1.8; }
-    footer { text-align: center; padding: 1.5rem; color: var(--muted); font-size: 0.9rem; }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <noscript><style>html:not(.ready) body { visibility: visible; }</style></noscript>
 </head>
-<body>
-  <header>
-    <span class="brand" data-i18n="brand">عاصمتي</span>
-    <button class="lang-btn" id="langToggle" type="button">English</button>
-  </header>
+<body data-page="home">
+  <div id="site-header"></div>
 
   <main>
-    <h1 data-i18n="title">عاصمتي</h1>
-    <p data-i18n="subtitle">الموقع قيد الإنشاء. ترقبوا الإطلاق قريباً.</p>
+    <div class="container">
+      <section class="hero">
+        <div class="hero-body">
+          <span class="notice-chip" data-i18n="home.hero.notice"></span>
+          <h1 data-i18n="home.hero.title"></h1>
+          <p data-i18n="home.hero.text"></p>
+          <div class="hero-actions">
+            <a class="btn btn-white" href="services.html"><span data-i18n="cta.catalogue"></span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+            <a class="btn btn-ghost" href="about.html" data-i18n="cta.about"></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section overview">
+        <div class="intro">
+          <h2 data-i18n="home.overview.title"></h2>
+          <p data-i18n="home.overview.text"></p>
+          <a class="btn btn-primary" href="services.html"><span data-i18n="cta.catalogue"></span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+        </div>
+        <div class="sector-grid" id="homeSectors"></div>
+      </section>
+
+      <section class="section banner banner-report">
+        <h2 data-i18n="home.report.title"></h2>
+        <p data-i18n="home.report.text"></p>
+        <a class="btn btn-green" href="contact.html" data-i18n="cta.contact"></a>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title" data-i18n="home.aud.title"></h2>
+        <div class="audiences">
+          <article class="aud-card">
+            <h3 data-i18n="aud.individual"></h3>
+            <p data-i18n="aud.individual.text"></p>
+            <img src="assets/img/aud-individual.jpg" alt="" width="245" height="220" loading="lazy">
+          </article>
+          <article class="aud-card">
+            <h3 data-i18n="aud.business"></h3>
+            <p data-i18n="aud.business.text"></p>
+            <img src="assets/img/aud-business.jpg" alt="" width="245" height="220" loading="lazy">
+          </article>
+          <article class="aud-card">
+            <h3 data-i18n="aud.government"></h3>
+            <p data-i18n="aud.government.text"></p>
+            <img src="assets/img/aud-government.jpg" alt="" width="245" height="220" loading="lazy">
+          </article>
+          <article class="aud-card">
+            <h3 data-i18n="aud.other"></h3>
+            <p data-i18n="aud.other.text"></p>
+            <img src="assets/img/aud-other.jpg" alt="" width="245" height="220" loading="lazy">
+          </article>
+        </div>
+      </section>
+
+      <section class="section banner banner-app">
+        <div>
+          <span class="soon-pill" data-i18n="soon.label"></span>
+          <h2 data-i18n="home.app.title"></h2>
+          <p data-i18n="home.app.text"></p>
+          <div class="stores">
+            <a class="store" data-store="googlePlayUrl" href="#"><span class="store-ic" aria-hidden="true">▶</span><span><small>GET IT ON</small><b>Google Play</b></span></a>
+            <a class="store" data-store="appStoreUrl" href="#"><span class="store-ic" aria-hidden="true"></span><span><small>Download on the</small><b>App Store</b></span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-band">
+        <div>
+          <h2 data-i18n="home.cta.title"></h2>
+          <p data-i18n="home.cta.text"></p>
+        </div>
+        <a class="btn btn-primary" href="services.html"><span data-i18n="cta.catalogue"></span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+      </section>
+    </div>
   </main>
 
-  <footer>
-    <span>&copy; <span id="year"></span> asimti.iq — </span><span data-i18n="rights">جميع الحقوق محفوظة</span>
-  </footer>
+  <div id="site-footer"></div>
 
-  <script>
-    const t = {
-      ar: { brand: "عاصمتي", title: "عاصمتي", subtitle: "الموقع قيد الإنشاء. ترقبوا الإطلاق قريباً.", rights: "جميع الحقوق محفوظة", toggle: "English" },
-      en: { brand: "Asimti", title: "Asimti", subtitle: "Our website is under construction. Launching soon.", rights: "All rights reserved", toggle: "العربية" }
-    };
-    function setLang(lang) {
-      document.documentElement.lang = lang;
-      document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
-      document.querySelectorAll("[data-i18n]").forEach(el => el.textContent = t[lang][el.dataset.i18n]);
-      document.getElementById("langToggle").textContent = t[lang].toggle;
-      localStorage.setItem("lang", lang);
-    }
-    document.getElementById("langToggle").addEventListener("click", () =>
-      setLang(document.documentElement.lang === "ar" ? "en" : "ar"));
-    document.getElementById("year").textContent = new Date().getFullYear();
-    setLang(localStorage.getItem("lang") || "ar");
-  </script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/site.js"></script>
 </body>
 </html>

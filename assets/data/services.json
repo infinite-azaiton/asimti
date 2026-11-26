@@ -1,0 +1,66 @@
+{
+  "sectors": [
+    {
+      "id": "building", "icon": "building", "color": "#2b3081", "tint": "#eef0fa", "featured": true,
+      "nameAr": "إجازات البناء", "nameEn": "Building Permits",
+      "descAr": "خدمات إصدار إجازات البناء وتجديدها وتعديلها إلكترونياً، مع متابعة حالة الطلب خطوة بخطوة.",
+      "descEn": "Online services for issuing, renewing and amending building permits, with step-by-step request tracking.",
+      "planned": [
+        { "nameAr": "إصدار إجازة بناء جديدة", "nameEn": "Issue a new building permit" },
+        { "nameAr": "تجديد إجازة بناء", "nameEn": "Renew a building permit" },
+        { "nameAr": "تعديل إجازة بناء", "nameEn": "Amend a building permit" }
+      ]
+    },
+    {
+      "id": "occupancy", "icon": "house", "color": "#00994c", "tint": "#edf8f1", "featured": false,
+      "nameAr": "إجازات الاستعمال", "nameEn": "Occupancy Permits",
+      "descAr": "خدمات إصدار إجازات استعمال العقارات وتجديدها عبر المنصة.",
+      "descEn": "Services for issuing and renewing property occupancy permits through the platform.",
+      "planned": [
+        { "nameAr": "إصدار إجازة استعمال", "nameEn": "Issue an occupancy permit" },
+        { "nameAr": "تجديد إجازة استعمال", "nameEn": "Renew an occupancy permit" }
+      ]
+    },
+    {
+      "id": "water", "icon": "water", "color": "#168abb", "tint": "#eaf7fc", "featured": true,
+      "nameAr": "المياه والصرف الصحي", "nameEn": "Water and Wastewater",
+      "descAr": "تقديم طلبات خدمات المياه ومتابعتها، وطلب اشتراك جديد، والاستعلام عن فواتير المياه إلكترونياً.",
+      "descEn": "Submit and follow up on water service requests, request a new connection and look up water bills online.",
+      "planned": [
+        { "nameAr": "تقديم طلبات المياه إلكترونياً", "nameEn": "Submit water service requests online" },
+        { "nameAr": "طلب اشتراك مياه جديد", "nameEn": "Request a new water connection" },
+        { "nameAr": "الاستعلام عن فاتورة المياه", "nameEn": "View a water bill" }
+      ]
+    },
+    {
+      "id": "payments", "icon": "invoice", "color": "#a57925", "tint": "#fff7e8", "featured": true,
+      "nameAr": "التحصيل والفوترة", "nameEn": "Billing and Collection",
+      "descAr": "الاطلاع على الفواتير والرسوم البلدية وخيارات تسديدها عبر منصات الدفع الرسمية.",
+      "descEn": "View municipal invoices and fees and their payment options through the official payment platforms.",
+      "planned": [
+        { "nameAr": "تسديد فاتورة بلدية", "nameEn": "Pay a municipal invoice" }
+      ]
+    },
+    {
+      "id": "complaints", "icon": "chat", "color": "#c2410c", "tint": "#fff1ea", "featured": false,
+      "nameAr": "الشكاوى", "nameEn": "Complaints",
+      "descAr": "قناة مباشرة لتقديم الشكاوى والملاحظات والمقترحات ومتابعة حالتها برقم مرجعي.",
+      "descEn": "A direct channel to submit complaints, feedback and suggestions and track them with a reference number.",
+      "planned": []
+    },
+    {
+      "id": "properties", "icon": "landmark", "color": "#5b4bb7", "tint": "#f1effb", "featured": false,
+      "nameAr": "الأملاك", "nameEn": "Properties",
+      "descAr": "خدمات أملاك أمانة بغداد ومعاملاتها.",
+      "descEn": "Services and transactions related to Mayoralty of Baghdad properties.",
+      "planned": []
+    },
+    {
+      "id": "visits", "icon": "badge", "color": "#0f766e", "tint": "#e8f6f4", "featured": false,
+      "nameAr": "تصاريح الزيارة", "nameEn": "Visit Permits",
+      "descAr": "طلب تصاريح الزيارة ومتابعة حالتها إلكترونياً.",
+      "descEn": "Request visit permits and track their status online.",
+      "planned": []
+    }
+  ]
+}
