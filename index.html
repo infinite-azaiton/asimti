@@ -13,21 +13,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=5">
+  <link rel="stylesheet" href="assets/css/style.css?v=7">
   <noscript><style>html:not(.ready) body { visibility: visible; }</style></noscript>
 </head>
 <body>
-  <div class="topbar">
-    <div class="container">
-      <span class="owner"><img src="assets/img/baghdad.png" alt="" width="28" height="28"><span data-i18n="footer.owner"></span></span>
-      <button class="lang-btn" id="langBtn" type="button"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span data-i18n="lang.switch"></span></button>
-    </div>
-  </div>
+  <div class="brandline" aria-hidden="true"></div>
   <header class="site-header" id="top">
-    <div class="container nav">
-      <a class="brand" href="#top"><img src="assets/img/logo.png" alt="" width="59" height="64"><span class="sr-only" data-i18n="brand"></span></a>
-      <nav class="links" id="navLinks" aria-label="Main"><a href="#about" data-i18n="nav.about"></a><a href="#vision" data-i18n="nav.vision"></a><a href="#goals" data-i18n="nav.goals"></a><a href="#values" data-i18n="nav.values"></a><a href="#offer" data-i18n="nav.offer"></a><a href="#contact" data-i18n="nav.contact"></a></nav>
-      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span class="sr-only" data-i18n="nav.menu"></span></button>
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="#top"><img src="assets/img/logo.png" alt="" width="52" height="56"><span class="sr-only" data-i18n="brand"></span></a>
+        <nav class="links" id="navLinks" aria-label="Main"><a href="#about" data-i18n="nav.about"></a><a href="#vision" data-i18n="nav.vision"></a><a href="#goals" data-i18n="nav.goals"></a><a href="#values" data-i18n="nav.values"></a><a href="#offer" data-i18n="nav.offer"></a><a href="#contact" data-i18n="nav.contact"></a></nav>
+        <div class="tools">
+          <button class="lang-btn" id="langBtn" type="button"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span data-i18n="lang.switch"></span></button>
+          <span class="owner"><img src="assets/img/baghdad.png" alt="" width="44" height="44"><span data-i18n="footer.owner"></span></span>
+          <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span class="sr-only" data-i18n="nav.menu"></span></button>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -41,7 +42,7 @@
           <p class="hero-lead" data-i18n="hero.lead"></p>
           <p class="hero-copy" data-i18n="hero.text"></p>
           <div class="hero-actions">
-            <a class="btn btn-light" href="#about"><span data-i18n="hero.cta1"></span><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+            <a class="btn btn-green" href="#about"><span data-i18n="hero.cta1"></span><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
             <a class="btn btn-outline" href="#offer" data-i18n="hero.cta2"></a>
           </div>
         </div>
@@ -52,15 +53,15 @@
       <div class="container">
         <div class="hi-bar">
           <article class="hi">
-            <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.200 7-11.500A7 7 0 0 0 5 9.500C5 14.800 12 21 12 21Z"/><circle cx="12" cy="9.500" r="2.500"/></svg></span>
+            <span class="hi-ic"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.200 7-11.500A7 7 0 0 0 5 9.500C5 14.800 12 21 12 21Z"/><circle cx="12" cy="9.500" r="2.500"/></svg></span>
             <div><h3 data-i18n="hi.1.t"></h3><p data-i18n="hi.1.d"></p></div>
           </article>
           <article class="hi">
-            <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2.200"/><path d="M5.500 16a3.500 3.500 0 0 1 7 0M15 10h3.500M15 13.500h3.500"/></svg></span>
+            <span class="hi-ic"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2.200"/><path d="M5.500 16a3.500 3.500 0 0 1 7 0M15 10h3.500M15 13.500h3.500"/></svg></span>
             <div><h3 data-i18n="hi.2.t"></h3><p data-i18n="hi.2.d"></p></div>
           </article>
           <article class="hi">
-            <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <span class="hi-ic"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
             <div><h3 data-i18n="hi.3.t"></h3><p data-i18n="hi.3.d"></p></div>
           </article>
         </div>
@@ -83,30 +84,34 @@
           </ul>
         </div>
         <figure class="about-art reveal">
-          <img src="assets/img/city.jpg" alt="" width="1800" height="600" loading="lazy">
-          <figcaption data-i18n="about.caption"></figcaption>
+          <span class="frame" aria-hidden="true"></span>
+          <img class="tile" src="assets/img/brand-tile.jpg" alt="" width="900" height="900" loading="lazy">
+          <div class="snap">
+            <img src="assets/img/hero.jpg" alt="" width="1877" height="838" loading="lazy">
+            <figcaption data-i18n="about.caption"></figcaption>
+          </div>
         </figure>
       </div>
     </section>
 
-    <section class="section alt" id="vision">
-      <div class="container vm-grid">
-        <article class="card vm reveal">
-          <span class="ic ic-lg"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.600-7 10-7 10 7 10 7-3.600 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></span>
+    <section class="vm" id="vision">
+      <article class="vm-half vision">
+        <div class="vm-inner reveal">
           <h2 data-i18n="vision.title"></h2>
           <p data-i18n="vision.text"></p>
-        </article>
-        <article class="card vm green reveal">
-          <span class="ic ic-lg"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg></span>
+        </div>
+      </article>
+      <article class="vm-half mission">
+        <div class="vm-inner reveal">
           <h2 data-i18n="mission.title"></h2>
           <p data-i18n="mission.text"></p>
-        </article>
-      </div>
+        </div>
+      </article>
     </section>
 
     <section class="section" id="goals">
-      <div class="container narrow">
-        <header class="sec-head">
+      <div class="container split">
+        <header class="sec-head start">
           <span class="eyebrow" data-i18n="goals.eyebrow"></span>
           <h2 data-i18n="goals.title"></h2>
           <p data-i18n="goals.lead"></p>
@@ -123,34 +128,34 @@
 
     <section class="section dark" id="values">
       <div class="container">
-        <header class="sec-head">
+        <header class="sec-head start">
           <span class="eyebrow" data-i18n="values.eyebrow"></span>
           <h2 data-i18n="values.title"></h2>
           <p data-i18n="values.lead"></p>
         </header>
         <div class="values">
           <article class="value reveal">
-            <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.400-7-10a4 4 0 0 1 7-2.600A4 4 0 0 1 19 10c0 5.600-7 10-7 10Z"/></svg></span>
+            <span class="idx">01</span>
             <h3 data-i18n="values.1.t"></h3>
             <p data-i18n="values.1.d"></p>
           </article>
           <article class="value reveal">
-            <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.500-3.500"/></svg></span>
+            <span class="idx">02</span>
             <h3 data-i18n="values.2.t"></h3>
             <p data-i18n="values.2.d"></p>
           </article>
           <article class="value reveal">
-            <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.500 9.500 8 11 4.500-1.500 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <span class="idx">03</span>
             <h3 data-i18n="values.3.t"></h3>
             <p data-i18n="values.3.d"></p>
           </article>
           <article class="value reveal">
-            <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.500"/><path d="M2.500 20a6.500 6.500 0 0 1 13 0M16 4.700a3.500 3.500 0 0 1 0 6.600M18 14.500a6.500 6.500 0 0 1 3.500 5.500"/></svg></span>
+            <span class="idx">04</span>
             <h3 data-i18n="values.4.t"></h3>
             <p data-i18n="values.4.d"></p>
           </article>
           <article class="value reveal">
-            <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18 10 12l4 4 6-8M15 8h5v5"/></svg></span>
+            <span class="idx">05</span>
             <h3 data-i18n="values.5.t"></h3>
             <p data-i18n="values.5.d"></p>
           </article>
@@ -166,18 +171,18 @@
           <p data-i18n="who.lead"></p>
         </header>
         <div class="who">
-          <article class="card who-card reveal">
-            <span class="ic ic-lg"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>
+          <article class="who-item reveal">
+            <img src="assets/img/who-individual.svg" alt="" width="320" height="240" loading="lazy">
             <h3 data-i18n="who.1.t"></h3>
             <p data-i18n="who.1.d"></p>
           </article>
-          <article class="card who-card reveal">
-            <span class="ic ic-lg"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></span>
+          <article class="who-item reveal">
+            <img src="assets/img/who-business.svg" alt="" width="320" height="240" loading="lazy">
             <h3 data-i18n="who.2.t"></h3>
             <p data-i18n="who.2.d"></p>
           </article>
-          <article class="card who-card reveal">
-            <span class="ic ic-lg"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10M9 21V10M15 21V10M19 21V10M2 10l10-6 10 6Z"/></svg></span>
+          <article class="who-item reveal">
+            <img src="assets/img/who-government.svg" alt="" width="320" height="240" loading="lazy">
             <h3 data-i18n="who.3.t"></h3>
             <p data-i18n="who.3.d"></p>
           </article>
@@ -185,7 +190,7 @@
       </div>
     </section>
 
-    <section class="section alt" id="offer">
+    <section class="section sky" id="offer">
       <div class="container">
         <header class="sec-head">
           <span class="eyebrow" data-i18n="offer.eyebrow"></span>
@@ -193,25 +198,33 @@
           <p data-i18n="offer.lead"></p>
         </header>
         <div class="offers">
-          <article class="card offer reveal">
-            <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2.200"/><path d="M5.500 16a3.500 3.500 0 0 1 7 0M15 10h3.500M15 13.500h3.500"/></svg></span>
-            <h3 data-i18n="offer.1.t"></h3>
-            <p data-i18n="offer.1.d"></p>
+          <article class="offer reveal">
+            <span class="offer-ic"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2.200"/><path d="M5.500 16a3.500 3.500 0 0 1 7 0M15 10h3.500M15 13.500h3.500"/></svg></span>
+            <div>
+              <h3 data-i18n="offer.1.t"></h3>
+              <p data-i18n="offer.1.d"></p>
+            </div>
           </article>
-          <article class="card offer reveal">
-            <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2V5ZM8 7h7M8 11h7"/></svg></span>
-            <h3 data-i18n="offer.2.t"></h3>
-            <p data-i18n="offer.2.d"></p>
+          <article class="offer reveal">
+            <span class="offer-ic"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2V5ZM8 7h7M8 11h7"/></svg></span>
+            <div>
+              <h3 data-i18n="offer.2.t"></h3>
+              <p data-i18n="offer.2.d"></p>
+            </div>
           </article>
-          <article class="card offer reveal">
-            <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2h12v20l-3-2-3 2-3-2-3 2V2ZM9 7h6M9 11h6M9 15h3"/></svg></span>
-            <h3 data-i18n="offer.3.t"></h3>
-            <p data-i18n="offer.3.d"></p>
+          <article class="offer reveal">
+            <span class="offer-ic"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2h12v20l-3-2-3 2-3-2-3 2V2ZM9 7h6M9 11h6M9 15h3"/></svg></span>
+            <div>
+              <h3 data-i18n="offer.3.t"></h3>
+              <p data-i18n="offer.3.d"></p>
+            </div>
           </article>
-          <article class="card offer reveal">
-            <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.800 7L3 21l2-6.200A8 8 0 1 1 21 12Z"/></svg></span>
-            <h3 data-i18n="offer.4.t"></h3>
-            <p data-i18n="offer.4.d"></p>
+          <article class="offer reveal">
+            <span class="offer-ic"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.800 7L3 21l2-6.200A8 8 0 1 1 21 12Z"/></svg></span>
+            <div>
+              <h3 data-i18n="offer.4.t"></h3>
+              <p data-i18n="offer.4.d"></p>
+            </div>
           </article>
         </div>
         <div class="sectors reveal">
@@ -227,8 +240,8 @@
             <li><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.800 7L3 21l2-6.200A8 8 0 1 1 21 12Z"/></svg><span data-i18n="sector.5"></span></li>
             <li><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10M9 21V10M15 21V10M19 21V10M2 10l10-6 10 6Z"/></svg><span data-i18n="sector.6"></span></li>
             <li><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M9 3v4M15 3v4M8 16a4 4 0 0 1 8 0"/><circle cx="12" cy="11.500" r="2"/></svg><span data-i18n="sector.7"></span></li>
-            <li class="note"><b data-i18n="sectors.soon.t"></b><span data-i18n="sectors.note"></span></li>
           </ul>
+          <p class="sectors-note" data-i18n="sectors.note"></p>
         </div>
       </div>
     </section>
@@ -251,8 +264,8 @@
           <p data-i18n="contact.text"></p>
         </div>
         <a class="phone" href="tel:5628">
-          <span class="ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg></span>
-          <span class="phone-text"><small data-i18n="contact.call"></small><b dir="ltr">5628</b></span>
+          <small data-i18n="contact.call"></small>
+          <b dir="ltr"><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg><span>5628</span></b>
         </a>
       </div>
     </section>
@@ -279,6 +292,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/site.js?v=5"></script>
+  <script src="assets/js/site.js?v=7"></script>
 </body>
 </html>

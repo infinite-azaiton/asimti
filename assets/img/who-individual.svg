@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-hidden="true">
+  <circle cx="160" cy="118" r="98" fill="#dff1fb"/>
+  <circle cx="58" cy="62" r="6" fill="#2aaae1" opacity=".45"/>
+  <circle cx="270" cy="52" r="9" fill="#00994c" opacity=".3"/>
+  <rect x="52" y="200" width="216" height="6" rx="3" fill="#2b3081" opacity=".14"/>
+  <!-- person behind -->
+  <circle cx="112" cy="96" r="21" fill="#2aaae1"/>
+  <path d="M72 200v-18a40 40 0 0 1 80 0v18z" fill="#2aaae1"/>
+  <!-- person in front -->
+  <circle cx="170" cy="84" r="26" fill="#2b3081"/>
+  <path d="M122 200v-20a48 48 0 0 1 96 0v20z" fill="#2b3081"/>
+  <path d="M152 136a48 48 0 0 1 36 0l-18 22z" fill="#fff" opacity=".16"/>
+  <!-- ID card -->
+  <rect x="184" y="136" width="104" height="68" rx="11" fill="#fff" stroke="#2b3081" stroke-width="3.500"/>
+  <circle cx="210" cy="160" r="10" fill="#2aaae1"/>
+  <path d="M196 188a14 14 0 0 1 28 0z" fill="#2aaae1"/>
+  <rect x="234" y="154" width="40" height="7" rx="3.500" fill="#2b3081"/>
+  <rect x="234" y="169" width="30" height="7" rx="3.500" fill="#c8d6ec"/>
+  <rect x="234" y="184" width="22" height="7" rx="3.500" fill="#c8d6ec"/>
+  <!-- verified -->
+  <circle cx="288" cy="136" r="16" fill="#00994c" stroke="#fff" stroke-width="3"/>
+  <path d="m280 136 6 6 10-11" fill="none" stroke="#fff" stroke-width="3.500" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

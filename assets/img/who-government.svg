@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-hidden="true">
+  <circle cx="160" cy="118" r="98" fill="#dff1fb"/>
+  <circle cx="56" cy="66" r="6" fill="#2aaae1" opacity=".45"/>
+  <circle cx="268" cy="78" r="9" fill="#00994c" opacity=".3"/>
+  <rect x="52" y="200" width="216" height="6" rx="3" fill="#2b3081" opacity=".14"/>
+  <!-- flag -->
+  <rect x="158" y="26" width="4" height="34" rx="2" fill="#2b3081"/>
+  <path d="M162 28h30l-8 9 8 9h-30z" fill="#00994c"/>
+  <!-- pediment -->
+  <path d="M80 104 160 58l80 46z" fill="#2b3081"/>
+  <circle cx="160" cy="86" r="8.500" fill="#fff"/>
+  <rect x="84" y="102" width="152" height="13" rx="3" fill="#2b3081"/>
+  <!-- columns -->
+  <g fill="#2aaae1">
+    <rect x="96" y="119" width="17" height="60" rx="4"/>
+    <rect x="124" y="119" width="17" height="60" rx="4"/>
+    <rect x="152" y="119" width="17" height="60" rx="4"/>
+    <rect x="180" y="119" width="17" height="60" rx="4"/>
+    <rect x="208" y="119" width="17" height="60" rx="4"/>
+  </g>
+  <!-- steps -->
+  <rect x="86" y="179" width="148" height="11" rx="2.500" fill="#2b3081"/>
+  <rect x="74" y="190" width="172" height="11" rx="2.500" fill="#2b3081"/>
+  <!-- charity badge -->
+  <circle cx="246" cy="164" r="24" fill="#fff" stroke="#00994c" stroke-width="3.500"/>
+  <path d="M246 177c-12-8.500-15.500-14.500-11-19.500 3.500-3.800 8.500-2.500 11 2 2.500-4.500 7.500-5.800 11-2 4.500 5 1 11-11 19.500z" fill="#00994c"/>
+</svg>
