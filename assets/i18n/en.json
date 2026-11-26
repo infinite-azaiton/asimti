@@ -18,15 +18,13 @@
   "soon.portal": "The e-services portal is being prepared and will be available soon.",
   "soon.app": "The Asimti app will be available in the app stores soon.",
   "soon.label": "Coming soon",
-
   "strip.title": "Share your voice. Be part of the change.",
   "strip.text": "Help improve your neighbourhood. Share your suggestions or call us.",
-  "footer.app.title": "The Asimti app is coming soon!",
-  "footer.app.text": "Quick access to Mayoralty services, request tracking and notifications, wherever you are.",
+  "footer.app.title": "Get the Asimti app",
+  "footer.app.text": "Quick access to municipal services, request tracking and notifications, wherever you are.",
   "footer.links": "Useful links",
   "footer.portal": "Portal services",
   "footer.rights": "© Mayoralty of Baghdad (Asimti). All rights reserved.",
-
   "home.hero.title": "Manage your municipal services in one place",
   "home.hero.text": "Asimti is the unified digital platform of the Mayoralty of Baghdad, bringing the services of its sectors and departments together in one place, anywhere and anytime.",
   "home.hero.notice": "E-services are being prepared and will be available soon",
@@ -47,7 +45,6 @@
   "home.app.text": "The Mayoralty of Baghdad brings its unified digital services to your phone, a major step forward in automating transactions and digital transformation.",
   "home.cta.title": "Asimti… because serving you is a trust",
   "home.cta.text": "Registration and sign-in will open when the e-services portal launches soon.",
-
   "about.title": "About Asimti",
   "about.lead": "The unified digital platform of the Mayoralty of Baghdad",
   "about.p1": "Asimti is the unified digital platform of the Mayoralty of Baghdad. It brings the services of the Mayoralty’s sectors and departments together in one place, and lets citizens, residents and businesses deal with the Mayoralty online, simply and clearly, from anywhere and at any time.",
@@ -87,14 +84,12 @@
   "about.what.4": "A channel for submitting suggestions and feedback.",
   "about.slogan.title": "Our slogan",
   "about.slogan": "Asimti… because serving you is a trust",
-
   "svc.title": "E-services guide",
   "svc.lead": "A unified guide to the Mayoralty of Baghdad sector services that will be available through Asimti.",
   "svc.notice.title": "Services are being prepared",
   "svc.notice.text": "We are currently preparing the e-services and connecting them to their systems. Services will become available in stages when the portal launches, and the list may change before launch.",
   "svc.badge": "Coming soon",
   "svc.planned": "Services in preparation",
-
   "faq.title": "Frequently asked questions",
   "faq.lead": "Answers to what beneficiaries ask most, grouped by topic.",
   "faq.notice": "The e-services portal is being prepared; the answers below describe how it will work once launched.",
@@ -103,7 +98,6 @@
   "faq.empty": "No matching questions. Try another word or contact us.",
   "faq.help.title": "Didn’t find your answer?",
   "faq.help.text": "Our support team is ready to help.",
-
   "contact.title": "Contact us",
   "contact.lead": "Share your voice and be part of the change. Help improve your neighbourhood by sending us your suggestions and feedback.",
   "contact.call.title": "Call centre",
@@ -113,8 +107,18 @@
   "contact.faq.title": "Frequently asked questions",
   "contact.faq.text": "You may find your answer on the FAQs page.",
   "contact.faq.btn": "Browse FAQs",
-
   "nf.title": "Page not found",
   "nf.text": "Sorry, we couldn’t find the page you were looking for.",
-  "nf.back": "Back to home"
+  "nf.back": "Back to home",
+  "footer.privacy": "Privacy policy",
+  "footer.terms": "Terms of use",
+  "footer.sla": "Service level agreement (SLA)",
+  "footer.disclaimer": "Disclaimer",
+  "footer.security": "Platform security",
+  "footer.sitemap": "Site guide",
+  "footer.reg.individual": "Individual registration",
+  "footer.reg.company": "Company registration",
+  "footer.reg.track": "Track registration",
+  "footer.faq": "FAQs",
+  "soon.page": "This page is being prepared and will be available soon."
 }

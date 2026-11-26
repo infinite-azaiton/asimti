@@ -83,10 +83,12 @@
     ["faq", "faq.html", "nav.faq"],
     ["contact", "contact.html", "nav.contact"]
   ];
-  function socialHtml() {
+  function socialHtml(always) {
     var s = CONFIG.social || {};
-    return Object.keys(SOCIAL_ICONS).filter(function (k) { return s[k]; }).map(function (k) {
-      return '<a href="' + esc(s[k]) + '" target="_blank" rel="noopener" aria-label="' + k + '">' + SOCIAL_ICONS[k] + "</a>";
+    var keys = always ? ["x", "instagram", "facebook"] : Object.keys(SOCIAL_ICONS).filter(function (k) { return s[k]; });
+    return keys.map(function (k) {
+      if (s[k]) return '<a href="' + esc(s[k]) + '" target="_blank" rel="noopener" aria-label="' + k + '">' + SOCIAL_ICONS[k] + "</a>";
+      return '<a href="#" data-soon aria-label="' + k + '">' + SOCIAL_ICONS[k] + "</a>";
     }).join("");
   }
   function storesHtml() {
@@ -117,14 +119,19 @@
         '<section class="contact-strip"><div class="container"><div><h2 data-i18n="strip.title"></h2><p data-i18n="strip.text"></p></div>' +
         '<a class="phone-pill" href="tel:' + esc(CONFIG.phone || "") + '">' + icon("phone", 34) + '<b dir="ltr">' + esc(CONFIG.phone || "") + "</b></a></div></section>" +
         '<footer class="site-footer"><div class="container"><div class="footer-main">' +
-        '<div class="footer-app"><img src="assets/img/logo-white.png" alt="" width="130" height="141"><div><h3 data-i18n="footer.app.title"></h3><p data-i18n="footer.app.text"></p>' + storesHtml() + "</div></div>" +
+        '<div class="footer-app"><img src="assets/img/logo-white.png" alt="" width="145" height="157"><div><h3 data-i18n="footer.app.title"></h3><p data-i18n="footer.app.text"></p>' + storesHtml() + "</div></div>" +
         '<div class="footer-links"><small data-i18n="footer.links"></small>' +
-        NAV.slice(1).map(function (n) { return '<a href="' + n[1] + '" data-i18n="' + n[2] + '"></a>'; }).join("") + "</div>" +
+        ["privacy", "terms", "sla", "disclaimer", "security", "sitemap"].map(function (k) {
+          return '<a href="#" data-soon data-i18n="footer.' + k + '"></a>';
+        }).join("") + "</div>" +
         '<div class="footer-links"><small data-i18n="footer.portal"></small>' +
-        '<a href="#" data-portal data-i18n="cta.signin"></a><a href="#" data-portal data-i18n="cta.register"></a>' +
-        '<a href="services.html" data-i18n="cta.catalogue"></a></div>' +
+        '<a href="services.html" data-i18n="cta.catalogue"></a>' +
+        '<a href="#" data-portal data-i18n="footer.reg.individual"></a>' +
+        '<a href="#" data-portal data-i18n="footer.reg.company"></a>' +
+        '<a href="#" data-portal data-i18n="footer.reg.track"></a>' +
+        '<a href="faq.html" data-i18n="footer.faq"></a></div>' +
         "</div>" +
-        '<div class="footer-bottom"><div class="footer-owner"><img src="assets/img/baghdad.png" alt="" width="44" height="44"><span data-i18n="footer.rights"></span></div><div class="social">' + socialHtml() + "</div></div>" +
+        '<div class="footer-bottom"><span data-i18n="footer.rights"></span><div class="social">' + socialHtml(true) + "</div></div>" +
         "</div></footer>";
     }
     var langBtn = $("#langBtn");
@@ -148,13 +155,14 @@
   }
   // Links without a configured destination show a "coming soon" notice instead of navigating.
   document.addEventListener("click", function (e) {
-    var a = e.target.closest && e.target.closest("[data-portal],[data-store]");
+    var a = e.target.closest && e.target.closest("[data-portal],[data-store],[data-soon]");
     if (!a) return;
-    var isStore = a.hasAttribute("data-store");
-    var url = isStore ? CONFIG[a.getAttribute("data-store")] : CONFIG.portalUrl;
+    var key = "soon.page", url = "";
+    if (a.hasAttribute("data-store")) { key = "soon.app"; url = CONFIG[a.getAttribute("data-store")]; }
+    else if (a.hasAttribute("data-portal")) { key = "soon.portal"; url = CONFIG.portalUrl; }
     if (url) return;
     e.preventDefault();
-    toast(t(isStore ? "soon.app" : "soon.portal"));
+    toast(t(key));
   });
 
   /* ---------- i18n ---------- */
