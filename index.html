@@ -13,13 +13,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=3">
+  <link rel="stylesheet" href="assets/css/style.css?v=4">
   <noscript><style>html:not(.ready) body { visibility: visible; }</style></noscript>
 </head>
 <body>
+  <div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
   <header class="site-header" id="top">
     <div class="container nav">
-      <a class="brand" href="#top"><img src="assets/img/logo.png" alt="" width="60" height="65"><span class="sr-only" data-i18n="brand"></span></a>
+      <a class="brand" href="#top">
+        <img class="logo-light" src="assets/img/logo-white.png" alt="" width="60" height="65">
+        <img class="logo-dark" src="assets/img/logo.png" alt="" width="60" height="65">
+        <span class="sr-only" data-i18n="brand"></span>
+      </a>
       <nav class="links" id="navLinks" aria-label="Main"><a href="#about" data-i18n="nav.about"></a><a href="#vision" data-i18n="nav.vision"></a><a href="#goals" data-i18n="nav.goals"></a><a href="#values" data-i18n="nav.values"></a><a href="#offer" data-i18n="nav.offer"></a><a href="#contact" data-i18n="nav.contact"></a></nav>
       <div class="tools">
         <button class="lang-btn" id="langBtn" type="button"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span data-i18n="lang.switch"></span></button>
@@ -29,24 +34,27 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-bits" aria-hidden="true"></div>
+    <section class="hero" id="hero">
+      <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="hero-gridlines" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div class="hero-text">
           <span class="hero-badge" data-i18n="hero.badge"></span>
-          <h1><span data-i18n="hero.title"></span><small data-i18n="hero.lead"></small></h1>
+          <h1><span class="shine" data-i18n="hero.title"></span><small data-i18n="hero.lead"></small></h1>
           <p data-i18n="hero.text"></p>
           <div class="hero-actions">
             <a class="btn btn-white" href="#about"><span data-i18n="hero.cta1"></span><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
             <a class="btn btn-ghost" href="#offer" data-i18n="hero.cta2"></a>
           </div>
         </div>
-        <div class="hero-art">
+        <div class="hero-art" id="heroArt">
+          <canvas class="moon" id="moon" aria-hidden="true"></canvas>
           <div class="arch"><img src="assets/img/hero.jpg" alt="" width="1877" height="838" fetchpriority="high"></div>
           <div class="hero-seal"><img src="assets/img/logo-white.png" alt="" width="120" height="130"></div>
           <span class="hero-slogan" data-i18n="hero.slogan"></span>
         </div>
       </div>
+      <a class="scroll-cue" href="#about" aria-hidden="true" tabindex="-1"><i></i></a>
     </section>
 
     <section class="highlights">
@@ -112,13 +120,16 @@
           <span class="eyebrow" data-i18n="goals.eyebrow"></span>
           <h2 data-i18n="goals.title"></h2>
         </header>
-        <ol class="goals">
+        <div class="goals-wrap">
+          <span class="goals-line" aria-hidden="true"><i></i></span>
+          <ol class="goals">
           <li class="reveal"><span class="num">01</span><p data-i18n="goals.1"></p></li>
           <li class="reveal"><span class="num">02</span><p data-i18n="goals.2"></p></li>
           <li class="reveal"><span class="num">03</span><p data-i18n="goals.3"></p></li>
           <li class="reveal"><span class="num">04</span><p data-i18n="goals.4"></p></li>
           <li class="reveal"><span class="num">05</span><p data-i18n="goals.5"></p></li>
-        </ol>
+          </ol>
+        </div>
       </div>
     </section>
 
@@ -217,7 +228,9 @@
             <h3 data-i18n="sectors.title"></h3>
             <span class="soon" data-i18n="soon"></span>
           </div>
-          <ul>
+          <div class="marquee">
+            <div class="marquee-track">
+              <ul>
             <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V5l8-2v18M12 9l8 2v10M2 21h20M7 8h2M7 12h2M7 16h2M15 14h2M15 17h2"/></svg><span data-i18n="sector.1"></span></li>
             <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 3l9 8M5 10v11h14V10M10 21v-6h4v6"/></svg><span data-i18n="sector.2"></span></li>
             <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11Z"/></svg><span data-i18n="sector.3"></span></li>
@@ -225,13 +238,25 @@
             <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.800 7L3 21l2-6.200A8 8 0 1 1 21 12Z"/></svg><span data-i18n="sector.5"></span></li>
             <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10M9 21V10M15 21V10M19 21V10M2 10l10-6 10 6Z"/></svg><span data-i18n="sector.6"></span></li>
             <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M9 3v4M15 3v4M8 16a4 4 0 0 1 8 0"/><circle cx="12" cy="11.500" r="2"/></svg><span data-i18n="sector.7"></span></li>
-          </ul>
+              </ul>
+              <ul aria-hidden="true">
+            <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V5l8-2v18M12 9l8 2v10M2 21h20M7 8h2M7 12h2M7 16h2M15 14h2M15 17h2"/></svg><span data-i18n="sector.1"></span></li>
+            <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 3l9 8M5 10v11h14V10M10 21v-6h4v6"/></svg><span data-i18n="sector.2"></span></li>
+            <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11Z"/></svg><span data-i18n="sector.3"></span></li>
+            <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2h12v20l-3-2-3 2-3-2-3 2V2ZM9 7h6M9 11h6M9 15h3"/></svg><span data-i18n="sector.4"></span></li>
+            <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.800 7L3 21l2-6.200A8 8 0 1 1 21 12Z"/></svg><span data-i18n="sector.5"></span></li>
+            <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10M9 21V10M15 21V10M19 21V10M2 10l10-6 10 6Z"/></svg><span data-i18n="sector.6"></span></li>
+            <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M9 3v4M15 3v4M8 16a4 4 0 0 1 8 0"/><circle cx="12" cy="11.500" r="2"/></svg><span data-i18n="sector.7"></span></li>
+              </ul>
+            </div>
+          </div>
           <p data-i18n="sectors.note"></p>
         </div>
       </div>
     </section>
 
     <section class="slogan">
+      <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
       <div class="container reveal">
         <small data-i18n="slogan.small"></small>
         <strong data-i18n="slogan.big"></strong>
@@ -267,6 +292,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/site.js?v=3"></script>
+  <script src="assets/js/site.js?v=4"></script>
 </body>
 </html>
