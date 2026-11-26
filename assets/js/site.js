@@ -28,12 +28,16 @@
         root.dir = next === "ar" ? "rtl" : "ltr";
         try { localStorage.setItem("asimti.lang", next); } catch (e) { /* ignore */ }
         apply(dict);
+        $all("[data-lang]").forEach(function (btn) {
+          btn.setAttribute("aria-pressed", String(btn.getAttribute("data-lang") === next));
+        });
       })
       .catch(function (err) { console.error("i18n load failed", err); })
       .then(function () { root.classList.add("ready"); });
   }
-  var langBtn = $("#langBtn");
-  if (langBtn) langBtn.addEventListener("click", function () { setLang(lang === "ar" ? "en" : "ar"); });
+  $all("[data-lang]").forEach(function (btn) {
+    btn.addEventListener("click", function () { setLang(btn.getAttribute("data-lang")); });
+  });
 
   /* ---------- mobile menu ---------- */
   var header = $(".site-header"), toggle = $("#navToggle"), links = $("#navLinks");
