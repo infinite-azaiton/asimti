@@ -13,92 +13,260 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=2">
+  <link rel="stylesheet" href="assets/css/style.css?v=3">
   <noscript><style>html:not(.ready) body { visibility: visible; }</style></noscript>
 </head>
-<body data-page="home">
-  <div id="site-header"></div>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#top"><img src="assets/img/logo.png" alt="" width="60" height="65"><span class="sr-only" data-i18n="brand"></span></a>
+      <nav class="links" id="navLinks" aria-label="Main"><a href="#about" data-i18n="nav.about"></a><a href="#vision" data-i18n="nav.vision"></a><a href="#goals" data-i18n="nav.goals"></a><a href="#values" data-i18n="nav.values"></a><a href="#offer" data-i18n="nav.offer"></a><a href="#contact" data-i18n="nav.contact"></a></nav>
+      <div class="tools">
+        <button class="lang-btn" id="langBtn" type="button"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span data-i18n="lang.switch"></span></button>
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span class="sr-only" data-i18n="nav.menu"></span></button>
+      </div>
+    </div>
+  </header>
 
   <main>
-    <div class="container">
-      <section class="hero">
-        <div class="hero-body">
-          <span class="notice-chip" data-i18n="home.hero.notice"></span>
-          <h1 data-i18n="home.hero.title"></h1>
-          <p data-i18n="home.hero.text"></p>
+    <section class="hero">
+      <div class="hero-bits" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="hero-badge" data-i18n="hero.badge"></span>
+          <h1><span data-i18n="hero.title"></span><small data-i18n="hero.lead"></small></h1>
+          <p data-i18n="hero.text"></p>
           <div class="hero-actions">
-            <a class="btn btn-white" href="services.html"><span data-i18n="cta.catalogue"></span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
-            <a class="btn btn-ghost" href="about.html" data-i18n="cta.about"></a>
+            <a class="btn btn-white" href="#about"><span data-i18n="hero.cta1"></span><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+            <a class="btn btn-ghost" href="#offer" data-i18n="hero.cta2"></a>
           </div>
         </div>
-      </section>
-
-      <section class="section overview">
-        <div class="intro">
-          <h2 data-i18n="home.overview.title"></h2>
-          <p data-i18n="home.overview.text"></p>
-          <a class="btn btn-primary" href="services.html"><span data-i18n="cta.catalogue"></span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+        <div class="hero-art">
+          <div class="arch"><img src="assets/img/hero.jpg" alt="" width="1877" height="838" fetchpriority="high"></div>
+          <div class="hero-seal"><img src="assets/img/logo-white.png" alt="" width="120" height="130"></div>
+          <span class="hero-slogan" data-i18n="hero.slogan"></span>
         </div>
-        <div class="sector-grid" id="homeSectors"></div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section banner banner-report">
-        <h2 data-i18n="home.report.title"></h2>
-        <p data-i18n="home.report.text"></p>
-        <a class="btn btn-green" href="contact.html" data-i18n="cta.contact"></a>
-      </section>
+    <section class="highlights">
+      <div class="container hi-grid">
+          <article class="hi-card reveal">
+            <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.200 7-11.500A7 7 0 0 0 5 9.500C5 14.800 12 21 12 21Z"/><circle cx="12" cy="9.500" r="2.500"/></svg></span>
+            <div><h3 data-i18n="hi.1.t"></h3><p data-i18n="hi.1.d"></p></div>
+          </article>
+          <article class="hi-card reveal">
+            <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2.200"/><path d="M5.500 16a3.500 3.500 0 0 1 7 0M15 10h3.500M15 13.500h3.500"/></svg></span>
+            <div><h3 data-i18n="hi.2.t"></h3><p data-i18n="hi.2.d"></p></div>
+          </article>
+          <article class="hi-card reveal">
+            <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div><h3 data-i18n="hi.3.t"></h3><p data-i18n="hi.3.d"></p></div>
+          </article>
+      </div>
+    </section>
 
-      <section class="section">
-        <h2 class="section-title" data-i18n="home.aud.title"></h2>
-        <div class="audiences">
-          <article class="aud-card">
-            <h3 data-i18n="aud.individual"></h3>
-            <p data-i18n="aud.individual.text"></p>
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="reveal">
+          <header class="sec-head">
+          <span class="eyebrow" data-i18n="about.eyebrow"></span>
+          <h2 data-i18n="about.title"></h2>
+        </header>
+          <p class="lead" data-i18n="about.p1"></p>
+          <p class="lead" data-i18n="about.p2"></p>
+          <ul class="ticks">
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.500 4.500 4.500L19 7.500"/></svg><span data-i18n="about.k1"></span></li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.500 4.500 4.500L19 7.500"/></svg><span data-i18n="about.k2"></span></li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.500 4.500 4.500L19 7.500"/></svg><span data-i18n="about.k3"></span></li>
+          </ul>
+        </div>
+        <div class="about-art reveal">
+          <img class="photo" src="assets/img/city.jpg" alt="" width="1800" height="600" loading="lazy">
+          <div class="owner">
+            <img src="assets/img/baghdad.png" alt="" width="64" height="64">
+            <span data-i18n="footer.owner"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tint" id="vision">
+      <div class="container vm-grid">
+        <article class="vm reveal">
+          <span class="ic"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.600-7 10-7 10 7 10 7-3.600 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></span>
+          <h2 data-i18n="vision.title"></h2>
+          <p data-i18n="vision.text"></p>
+        </article>
+        <article class="vm green reveal">
+          <span class="ic"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg></span>
+          <h2 data-i18n="mission.title"></h2>
+          <p data-i18n="mission.text"></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="goals">
+      <div class="container">
+        <header class="sec-head">
+          <span class="eyebrow" data-i18n="goals.eyebrow"></span>
+          <h2 data-i18n="goals.title"></h2>
+        </header>
+        <ol class="goals">
+          <li class="reveal"><span class="num">01</span><p data-i18n="goals.1"></p></li>
+          <li class="reveal"><span class="num">02</span><p data-i18n="goals.2"></p></li>
+          <li class="reveal"><span class="num">03</span><p data-i18n="goals.3"></p></li>
+          <li class="reveal"><span class="num">04</span><p data-i18n="goals.4"></p></li>
+          <li class="reveal"><span class="num">05</span><p data-i18n="goals.5"></p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section dark" id="values">
+      <div class="container">
+        <header class="sec-head light">
+          <span class="eyebrow" data-i18n="values.eyebrow"></span>
+          <h2 data-i18n="values.title"></h2>
+        </header>
+        <div class="values">
+          <article class="value reveal">
+            <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.400-7-10a4 4 0 0 1 7-2.600A4 4 0 0 1 19 10c0 5.600-7 10-7 10Z"/></svg></span>
+            <h3 data-i18n="values.1.t"></h3>
+            <p data-i18n="values.1.d"></p>
+          </article>
+          <article class="value reveal">
+            <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.500-3.500"/></svg></span>
+            <h3 data-i18n="values.2.t"></h3>
+            <p data-i18n="values.2.d"></p>
+          </article>
+          <article class="value reveal">
+            <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.500 9.500 8 11 4.500-1.500 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <h3 data-i18n="values.3.t"></h3>
+            <p data-i18n="values.3.d"></p>
+          </article>
+          <article class="value reveal">
+            <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.500"/><path d="M2.500 20a6.500 6.500 0 0 1 13 0M16 4.700a3.500 3.500 0 0 1 0 6.600M18 14.500a6.500 6.500 0 0 1 3.500 5.500"/></svg></span>
+            <h3 data-i18n="values.4.t"></h3>
+            <p data-i18n="values.4.d"></p>
+          </article>
+          <article class="value reveal">
+            <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18 10 12l4 4 6-8M15 8h5v5"/></svg></span>
+            <h3 data-i18n="values.5.t"></h3>
+            <p data-i18n="values.5.d"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="who">
+      <div class="container">
+        <header class="sec-head">
+          <span class="eyebrow" data-i18n="who.eyebrow"></span>
+          <h2 data-i18n="who.title"></h2>
+        </header>
+        <div class="who">
+          <article class="who-card reveal">
             <img src="assets/img/aud-individual.jpg" alt="" width="245" height="220" loading="lazy">
+            <h3 data-i18n="who.1.t"></h3>
+            <p data-i18n="who.1.d"></p>
           </article>
-          <article class="aud-card">
-            <h3 data-i18n="aud.business"></h3>
-            <p data-i18n="aud.business.text"></p>
+          <article class="who-card reveal">
             <img src="assets/img/aud-business.jpg" alt="" width="245" height="220" loading="lazy">
+            <h3 data-i18n="who.2.t"></h3>
+            <p data-i18n="who.2.d"></p>
           </article>
-          <article class="aud-card">
-            <h3 data-i18n="aud.government"></h3>
-            <p data-i18n="aud.government.text"></p>
+          <article class="who-card reveal">
             <img src="assets/img/aud-government.jpg" alt="" width="245" height="220" loading="lazy">
-          </article>
-          <article class="aud-card">
-            <h3 data-i18n="aud.other"></h3>
-            <p data-i18n="aud.other.text"></p>
-            <img src="assets/img/aud-other.jpg" alt="" width="245" height="220" loading="lazy">
+            <h3 data-i18n="who.3.t"></h3>
+            <p data-i18n="who.3.d"></p>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section banner banner-app">
-        <div>
-          <span class="soon-pill" data-i18n="soon.label"></span>
-          <h2 data-i18n="home.app.title"></h2>
-          <p data-i18n="home.app.text"></p>
-          <div class="stores">
-            <a class="store" data-store="googlePlayUrl" href="#"><span class="store-ic" aria-hidden="true">▶</span><span><small>GET IT ON</small><b>Google Play</b></span></a>
-            <a class="store" data-store="appStoreUrl" href="#"><span class="store-ic" aria-hidden="true"></span><span><small>Download on the</small><b>App Store</b></span></a>
+    <section class="section tint" id="offer">
+      <div class="container">
+        <header class="sec-head">
+          <span class="eyebrow" data-i18n="offer.eyebrow"></span>
+          <h2 data-i18n="offer.title"></h2>
+        </header>
+        <div class="offers">
+          <article class="offer reveal">
+            <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2.200"/><path d="M5.500 16a3.500 3.500 0 0 1 7 0M15 10h3.500M15 13.500h3.500"/></svg></span>
+            <h3 data-i18n="offer.1.t"></h3>
+            <p data-i18n="offer.1.d"></p>
+          </article>
+          <article class="offer reveal">
+            <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2V5ZM8 7h7M8 11h7"/></svg></span>
+            <h3 data-i18n="offer.2.t"></h3>
+            <p data-i18n="offer.2.d"></p>
+          </article>
+          <article class="offer reveal">
+            <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2h12v20l-3-2-3 2-3-2-3 2V2ZM9 7h6M9 11h6M9 15h3"/></svg></span>
+            <h3 data-i18n="offer.3.t"></h3>
+            <p data-i18n="offer.3.d"></p>
+          </article>
+          <article class="offer reveal">
+            <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.800 7L3 21l2-6.200A8 8 0 1 1 21 12Z"/></svg></span>
+            <h3 data-i18n="offer.4.t"></h3>
+            <p data-i18n="offer.4.d"></p>
+          </article>
+        </div>
+        <div class="sectors reveal">
+          <div class="sectors-head">
+            <h3 data-i18n="sectors.title"></h3>
+            <span class="soon" data-i18n="soon"></span>
           </div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V5l8-2v18M12 9l8 2v10M2 21h20M7 8h2M7 12h2M7 16h2M15 14h2M15 17h2"/></svg><span data-i18n="sector.1"></span></li>
+            <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 3l9 8M5 10v11h14V10M10 21v-6h4v6"/></svg><span data-i18n="sector.2"></span></li>
+            <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11Z"/></svg><span data-i18n="sector.3"></span></li>
+            <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2h12v20l-3-2-3 2-3-2-3 2V2ZM9 7h6M9 11h6M9 15h3"/></svg><span data-i18n="sector.4"></span></li>
+            <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.800 7L3 21l2-6.200A8 8 0 1 1 21 12Z"/></svg><span data-i18n="sector.5"></span></li>
+            <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10M9 21V10M15 21V10M19 21V10M2 10l10-6 10 6Z"/></svg><span data-i18n="sector.6"></span></li>
+            <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M9 3v4M15 3v4M8 16a4 4 0 0 1 8 0"/><circle cx="12" cy="11.500" r="2"/></svg><span data-i18n="sector.7"></span></li>
+          </ul>
+          <p data-i18n="sectors.note"></p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section cta-band">
+    <section class="slogan">
+      <div class="container reveal">
+        <small data-i18n="slogan.small"></small>
+        <strong data-i18n="slogan.big"></strong>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact reveal">
         <div>
-          <h2 data-i18n="home.cta.title"></h2>
-          <p data-i18n="home.cta.text"></p>
+          <span class="eyebrow" data-i18n="contact.eyebrow"></span>
+          <h2 data-i18n="contact.title"></h2>
+          <p data-i18n="contact.text"></p>
         </div>
-        <a class="btn btn-primary" href="services.html"><span data-i18n="cta.catalogue"></span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
-      </section>
-    </div>
+        <a class="phone" href="tel:5628">
+          <span data-i18n="contact.call"></span>
+          <b dir="ltr"><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>5628</b>
+        </a>
+      </div>
+    </section>
   </main>
 
-  <div id="site-footer"></div>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/img/logo-white.png" alt="" width="110" height="119">
+        <p data-i18n="footer.text"></p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer"><a href="#about" data-i18n="nav.about"></a><a href="#vision" data-i18n="nav.vision"></a><a href="#goals" data-i18n="nav.goals"></a><a href="#values" data-i18n="nav.values"></a><a href="#offer" data-i18n="nav.offer"></a><a href="#contact" data-i18n="nav.contact"></a></nav>
+    </div>
+    <div class="container footer-bottom">
+      <span data-i18n="footer.rights"></span>
+      <span class="owner"><img src="assets/img/baghdad.png" alt="" width="36" height="36"><span data-i18n="footer.owner"></span></span>
+    </div>
+  </footer>
 
-  <script src="assets/js/config.js?v=2"></script>
-  <script src="assets/js/site.js?v=2"></script>
+  <script src="assets/js/site.js?v=3"></script>
 </body>
 </html>
