@@ -28,16 +28,10 @@
         root.dir = next === "ar" ? "rtl" : "ltr";
         try { localStorage.setItem("asimti.lang", next); } catch (e) { /* ignore */ }
         apply(dict);
-        $all("[data-lang]").forEach(function (btn) {
-          btn.setAttribute("aria-pressed", String(btn.getAttribute("data-lang") === next));
-        });
       })
       .catch(function (err) { console.error("i18n load failed", err); })
       .then(function () { root.classList.add("ready"); });
   }
-  $all("[data-lang]").forEach(function (btn) {
-    btn.addEventListener("click", function () { setLang(btn.getAttribute("data-lang")); });
-  });
   $all("[data-lang-toggle]").forEach(function (btn) {
     btn.addEventListener("click", function () { setLang(lang === "ar" ? "en" : "ar"); });
   });
