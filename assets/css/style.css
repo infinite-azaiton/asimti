@@ -74,10 +74,9 @@ html[dir="ltr"] .btn svg { transform: scaleX(-1); }
 .links a.active { font-weight: 700; }
 .links a.m-only { display: none; }
 .tools { display: flex; align-items: center; gap: 12px; }
-.lang { display: inline-flex; flex: none; gap: 2px; }
-.lang button { min-height: 44px; min-width: 48px; padding: 4px 12px; border: 0; border-radius: 10px; background: none; font-weight: 500; font-size: 16px; color: var(--muted); transition: background .2s, color .2s; }
-.lang button:hover { color: var(--navy); background: var(--alt); }
-.lang button[aria-pressed="true"] { background: var(--sky); color: var(--navy); font-weight: 700; }
+.lang-btn { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 8px 18px; background: #fff; border: 1px solid var(--line); border-radius: 999px; font-size: 16px; font-weight: 500; color: var(--navy); transition: border-color .2s, background .2s; }
+.lang-btn svg { color: var(--blue-ink); }
+.lang-btn:hover { border-color: var(--blue); background: var(--sky); }
 .nav-cta { padding: 9px 22px; }
 .nav-toggle { display: none; align-items: center; justify-content: center; min-width: 46px; min-height: 46px; background: var(--navy); border: 0; padding: 8px; border-radius: 12px; color: #fff; }
 
@@ -255,8 +254,6 @@ html[dir="rtl"] .phone b { text-align: right; }
   .values { grid-template-columns: 1fr; row-gap: 28px; }
   .value h3 { margin-top: 10px; }
   .footer-grid { grid-template-columns: 1fr; }
-  .lang-btn span { display: none; }
-  .lang-btn { padding: 9px; }
   .goals li { gap: 16px; padding: 20px 0; }
   .goals .num { min-width: 52px; font-size: 38px; }
   .goals p { font-size: 17px; }
@@ -297,7 +294,6 @@ html[dir="rtl"] .phone b { text-align: right; }
 }
 @media (max-width: 600px) {
   .brand-sep, .brand .brand-owner { display: none; }
-  .lang button { padding: 4px 10px; }
   .about-art .badge img { width: 64px; }
 }
 @media (min-width: 601px) and (max-width: 900px) {
@@ -391,7 +387,6 @@ html[dir="rtl"] .phone b { text-align: right; }
 @media (max-width: 600px) {
   .topbar span { font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .topbar .container { min-height: 32px; }
-  .lang button { min-width: 46px; padding: 4px 10px; }
 }
 @media (max-width: 600px) {
   .site-footer .owner img { width: 76px; height: 76px; }

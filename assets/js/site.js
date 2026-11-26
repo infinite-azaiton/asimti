@@ -38,6 +38,9 @@
   $all("[data-lang]").forEach(function (btn) {
     btn.addEventListener("click", function () { setLang(btn.getAttribute("data-lang")); });
   });
+  $all("[data-lang-toggle]").forEach(function (btn) {
+    btn.addEventListener("click", function () { setLang(lang === "ar" ? "en" : "ar"); });
+  });
 
   /* ---------- mobile menu ---------- */
   var header = $(".site-header"), toggle = $("#navToggle"), links = $("#navLinks");
